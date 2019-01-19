@@ -5,7 +5,7 @@ WORKDIR calibration
 
 RUN apt-get update && apt-get install -y texlive
 
-RUN pip install numpy scipy matplotlib
+RUN pip install numpy scipy matplotlib tqdm
 
 ADD code ./code
 ADD latex ./latex
